@@ -3,8 +3,8 @@ function Basic(front, back, image) {
         this.front = front,
             this.back = back,
             this.image = image,
-            console.log(front);
-        console.log(back);
+        //     console.log(front);
+        // console.log(back);
 
 
     } else {
