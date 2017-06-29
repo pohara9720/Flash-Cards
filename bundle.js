@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+// (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // function Basic(front,back){
 // 	this.front = front,
 // 	this.back= back,
@@ -7,7 +7,7 @@
 
 	
 // }
-var card = require("./cardConstructor.js");
+import * as card from 'cardConstructor.js';
 
 var questArray = [];
 
@@ -43,37 +43,11 @@ console.log(questArray);
 
 console.log("Question Array: " + questArray);
 $("#flip").on("click", function(){
-for ( var i=0; i<questArray.length;i++){
+    console.log('card is clicked');
 	$("#question").html(questArray[i].front);
 	$("image").attr(questArray[i].image);
-
-}
 });
-
-
-
-
-
-
-
-
-
-
-},{"./cardConstructor.js":2}],2:[function(require,module,exports){
-function Basic(front, back, image) {
-    if (this instanceof Basic) {
-        this.front = front,
-            this.back = back,
-            this.image = image,
-            console.log(front);
-        console.log(back);
-
-
-    } else {
-        return new Basic(front, back, image);
-    }
-}
 
 module.exports = Basic;
 
-},{}]},{},[1]);
+
