@@ -1,3 +1,38 @@
 h1{
 	text-align:center;
+	font-family: 'Kaushan Script', cursive;
+	color: pink;
+	background: black;
+}
+
+.card{
+	height: 400px;
+	width:300px;
+}
+img{
+	height: 250px;
+	width: 300px;
+}
+span{
+	font-size: 20px !important;
+	font-family: 'Bahiana', cursive;
+
+}
+body{
+	background:url(https://s-media-cache-ak0.pinimg.com/originals/53/d9/e1/53d9e1c210a5966a15c073e51fa808f9.jpg);
+
+}
+p{
+		font-family: 'Kaushan Script', cursive;
+	font-size: 20px;
+	float: left;
+	color: black;
+}
+.card-reveal{
+	background: url(https://www.walldevil.com/wallpapers/w04/046056-fan-art-mia-wallace-movies-pulp-fiction-quentin-tarantino-uma-thurman.jpg);
+	background-size: 240%;
+	background-position: center;
+}
+.card{
+	background-color:grey;
 }

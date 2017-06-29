@@ -8,4 +8,4 @@ function Basic(front, back, image) {
     }
 }
 
-// module.exports = Basic;
+module.exports = Basic;
